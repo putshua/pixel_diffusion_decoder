@@ -1,0 +1,22 @@
+{
+  "origin": "H3 refiner PiD video experiment",
+  "export_date": "2026-11-18T02:34:50Z",
+  "original_files": {
+    "train/pid_video/audit_vae.py": "4d6ac1c627b42edd7e8f873708fcfb4b5b5647159f18dc1e65d16e769f2fc592",
+    "train/pid_video/batch_probe.py": "2c09ef9ebbb08548ddecd0564634be3fdf2e1bea1d3e4e7a8ea013f36d241f33",
+    "train/pid_video/fetch_prior.py": "9bb3ccacd3f9446eaba3aff2bb5a77063794b4a114a58293b2d5e046086dbf25",
+    "train/pid_video/model.py": "bc4b59c517c463c89b2cc09fce42fed21935fa65dd0fd3550a547ceae3100a4b",
+    "train/pid_video/objective.py": "45f4ca920df2c621f943b61cde8fa9d6474daf8a25171f7e5c19eb4efd133c95",
+    "train/pid_video/optimization.py": "a6431524fe541e9516c879f400dab5a516d98f3c3bf725edae20c46530a25ce0",
+    "train/pid_video/preflight.py": "19719c03cb0461bf3ecd2d8fd1bd22ba60f11334e9f5b8c27e817d0a6365c6b1",
+    "train/pid_video/prepare.py": "84c4060e6e3fe3d74ae0627129f70961e6e0fd74057322ae44428c53d7e47d26",
+    "train/pid_video/train.py": "5c3e9917148e60c2c9e7fd919ea16d47c4511c4be46299d6d6ada830265ae9fa"
+  },
+  "changes": [
+    "standalone pid_video namespace",
+    "minimal checkpoint wrappers",
+    "explicit prepare manifest/validation/assets arguments",
+    "portable worker script and optional externally supplied holder",
+    "pinned initial prior revision"
+  ]
+}

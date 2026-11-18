@@ -1,0 +1,22 @@
+{
+  "source": "MiniMax-H3 FL2VA/video_vae local source export",
+  "license": "Apache-2.0 (SPDX headers in original files)",
+  "version": "local FL2VA export frozen by file SHA256",
+  "files": {
+    "attention.py": "c9db8465c57f0bfb40c0194227be6e34b2c1ff7c5b5d63abca9964eed6283767",
+    "base_module.py": "0e7ddf5086179a306298693ac461ffcbc27ccb28dbc786b1a05060de7a3357c0",
+    "conv.py": "b3adee35f27e5d372543242aa86ce5e0138f13b794b6c81f919001e3e2346723",
+    "flash.py": "c1918463d303a16f278a670bb4f33d3f8d6f7653b0d473313ff5835699b86d04",
+    "func.py": "0612c26a65f095699cc7acd51937cd153584fa5a0476956e46a4679aa575c22d",
+    "klvae.py": "d05a22b4918ad303f147d6b0d0ae9038bd1af1f810a5553b04f3542ab9bcff96",
+    "minimax_h3_video_vae.py": "77fdea69a48485b5434f65d08096657b5d78b78b7cdf24e1241038f237720138",
+    "norm.py": "258b120ca8d9a16366d7b811fe93eebf98fe1564db0995e8b7747229c651919a",
+    "normalize.py": "8db651acb9eb551c906a2850bbca8e9d851f00d07b30ccf66ceb6057da687a13",
+    "parallel.py": "7193522beafd65bc3dbe40b9843e360ab8da3a0bb211e9bfb67bb0d5d0e66919",
+    "utils.py": "309e45e9d9e33cd5516a10eac2d207eb9f940079a6d9bbe0ee80aaaf7eb42dcd",
+    "vae_cnn.py": "3949b701e6893bd2ea070cd5b18ed8135a7c21d884290df449b1997212d65b11",
+    "vae_module.py": "9558fb302e10a619f198e12e04701c68988e897d0b627f958f33d27fd2a30d94",
+    "vae_processor.py": "32870580a1802d9163104a4d68170e35a4772106867181e1bd343dff11f87d2e",
+    "vae_vit.py": "a372c28441b56ec2dbc6041dbd6ce2766c64c0e61b2c69a16594a97a11da3f58"
+  }
+}

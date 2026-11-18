@@ -1,0 +1,15 @@
+{
+  "cpu_tests": {
+    "test_pid_video": 6,
+    "test_pid_batch": 3,
+    "test_prepare": 1
+  },
+  "checkpoint_test": "portable ModelState/OptimizerState exact next-step CPU roundtrip passed",
+  "train_cli_import": "passed",
+  "original_business_imports": 0,
+  "secret_scan": "no detected credential literals; no data, videos, weights or checkpoints included",
+  "gpu_validation": "original experiment tested on full four-GPU model; no new GPU run for this exported namespace",
+  "layout": "standalone pid_video + bundled third_party; original workspace checker retains pre-existing MANIFEST.json root-file warning",
+  "publication": "Plain-text code and configuration in one final GitHub commit; no large files, encoded source, archives, weights or videos",
+  "dependency_change": "Compact export uses pip diffusers==0.41.0 instead of original local 0.40.0.dev0; full-GPU equivalence not established"
+}

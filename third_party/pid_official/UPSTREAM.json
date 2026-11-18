@@ -1,0 +1,23 @@
+{
+  "url": "https://github.com/nv-tlabs/PiD",
+  "commit": "2c8814c2b91cc41a2be7809962c891e0d0ccff5f",
+  "license": "Apache-2.0",
+  "modifications": [],
+  "files": {
+    "pid/__init__.py": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e",
+    "pid/_ext/__init__.py": "c1bd9b73c90f0e34117d4c210a9f5219b81b70e45cb3992b8912cb66814ebecf",
+    "pid/_ext/imaginaire/__init__.py": "c4dc0cf54a15db963e684ed996a7ceb38a3737390327929f05930ac903f33514",
+    "pid/_ext/imaginaire/utils/__init__.py": "c4dc0cf54a15db963e684ed996a7ceb38a3737390327929f05930ac903f33514",
+    "pid/_ext/imaginaire/utils/device.py": "fbbc3b685727bdfce9df015bc1f6cf06d6dfa59df8e3c6db305ded8bb830a75e",
+    "pid/_ext/imaginaire/utils/distributed.py": "aeec443572ce53f0d7140bd49bb1bb98038051c7abcae1bf5440967251db43c3",
+    "pid/_ext/imaginaire/utils/log.py": "24badfe753754d025800eed0e4bce7243177067bd3db1db6b30a911425d5b3bf",
+    "pid/_src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pid/_src/networks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "pid/_src/networks/lq_projection_2d.py": "6f0ff12a3ef9b4dc5a7b3a02779cd9a0633c3273cb29f9449d81c63607493146",
+    "pid/_src/networks/pid_net.py": "ac0058a1896ebeb63320b20dbb2c24310ea8b93d0825f21e5ddd00e66fa5ecb6",
+    "pid/_src/networks/pixeldit_official.py": "cef8825bbb5a10ae8c33ac04cc26faa4cb09db4c80e6f4783824e9d62ef5112b",
+    "pid/_src/utils/__init__.py": "c4dc0cf54a15db963e684ed996a7ceb38a3737390327929f05930ac903f33514",
+    "pid/_src/utils/context_parallel.py": "61c632d1c54955f26cf708e4915d94e4ed360abf7fb8f7ec464806b9a6fa32e4"
+  },
+  "subset": "Only runtime dependencies of PidNet; training/distillation infrastructure not included"
+}

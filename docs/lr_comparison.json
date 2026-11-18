@@ -1,0 +1,322 @@
+{
+  "source_checkpoint": "original experiment step 497 (weights not included)",
+  "global_batch": 64,
+  "micro_batch": 2,
+  "gradient_accumulation": 8,
+  "results": {
+    "old": {
+      "initial": [
+        4.431510925292969,
+        1.4655814170837402
+      ],
+      "final": [
+        4.429427146911621,
+        1.4649643898010254
+      ],
+      "steps": [
+        {
+          "arm": "old",
+          "step": 1,
+          "rf_loss": 4.431510925292969,
+          "x_mse": 1.4655814170837402,
+          "grad_norm": 12.989124298095703,
+          "seconds": 17.309574546990916,
+          "peak_allocated_gib": 53.60291576385498,
+          "peak_reserved_gib": 69.169921875,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-06,
+            "head": 2e-06
+          }
+        },
+        {
+          "arm": "old",
+          "step": 2,
+          "rf_loss": 4.431284427642822,
+          "x_mse": 1.4655107259750366,
+          "grad_norm": 12.994505882263184,
+          "seconds": 17.01085444702767,
+          "peak_allocated_gib": 53.602917194366455,
+          "peak_reserved_gib": 69.169921875,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-06,
+            "head": 2e-06
+          }
+        },
+        {
+          "arm": "old",
+          "step": 3,
+          "rf_loss": 4.431026935577393,
+          "x_mse": 1.4654415845870972,
+          "grad_norm": 13.001331329345703,
+          "seconds": 16.885123963002115,
+          "peak_allocated_gib": 53.602917194366455,
+          "peak_reserved_gib": 69.169921875,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-06,
+            "head": 2e-06
+          }
+        },
+        {
+          "arm": "old",
+          "step": 4,
+          "rf_loss": 4.430727958679199,
+          "x_mse": 1.465362787246704,
+          "grad_norm": 13.013757705688477,
+          "seconds": 16.901867443928495,
+          "peak_allocated_gib": 53.602917194366455,
+          "peak_reserved_gib": 69.169921875,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-06,
+            "head": 2e-06
+          }
+        },
+        {
+          "arm": "old",
+          "step": 5,
+          "rf_loss": 4.430454730987549,
+          "x_mse": 1.465291142463684,
+          "grad_norm": 13.02808666229248,
+          "seconds": 16.889204729814082,
+          "peak_allocated_gib": 53.602917194366455,
+          "peak_reserved_gib": 69.169921875,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-06,
+            "head": 2e-06
+          }
+        },
+        {
+          "arm": "old",
+          "step": 6,
+          "rf_loss": 4.430230140686035,
+          "x_mse": 1.4652283191680908,
+          "grad_norm": 13.040788650512695,
+          "seconds": 17.049620809964836,
+          "peak_allocated_gib": 53.602917194366455,
+          "peak_reserved_gib": 69.169921875,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-06,
+            "head": 2e-06
+          }
+        },
+        {
+          "arm": "old",
+          "step": 7,
+          "rf_loss": 4.429962158203125,
+          "x_mse": 1.465144157409668,
+          "grad_norm": 13.05652904510498,
+          "seconds": 16.921414845157415,
+          "peak_allocated_gib": 53.602917194366455,
+          "peak_reserved_gib": 69.169921875,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-06,
+            "head": 2e-06
+          }
+        },
+        {
+          "arm": "old",
+          "step": 8,
+          "rf_loss": 4.429708480834961,
+          "x_mse": 1.465059518814087,
+          "grad_norm": 13.071667671203613,
+          "seconds": 16.93312199693173,
+          "peak_allocated_gib": 53.602917194366455,
+          "peak_reserved_gib": 69.169921875,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-06,
+            "head": 2e-06
+          }
+        }
+      ]
+    },
+    "new": {
+      "initial": [
+        4.431510925292969,
+        1.4655814170837402
+      ],
+      "final": [
+        4.362955093383789,
+        1.443616509437561
+      ],
+      "steps": [
+        {
+          "arm": "new",
+          "step": 1,
+          "rf_loss": 4.431510925292969,
+          "x_mse": 1.4655814170837402,
+          "grad_norm": 12.989123344421387,
+          "seconds": 17.15076038101688,
+          "peak_allocated_gib": 53.600271701812744,
+          "peak_reserved_gib": 67.142578125,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-05,
+            "head": 0.0001
+          }
+        },
+        {
+          "arm": "new",
+          "step": 2,
+          "rf_loss": 4.423080921173096,
+          "x_mse": 1.4628698825836182,
+          "grad_norm": 12.983235359191895,
+          "seconds": 16.97448644787073,
+          "peak_allocated_gib": 53.600271701812744,
+          "peak_reserved_gib": 67.142578125,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-05,
+            "head": 0.0001
+          }
+        },
+        {
+          "arm": "new",
+          "step": 3,
+          "rf_loss": 4.4145331382751465,
+          "x_mse": 1.4601397514343262,
+          "grad_norm": 12.980477333068848,
+          "seconds": 17.06069767009467,
+          "peak_allocated_gib": 53.600271701812744,
+          "peak_reserved_gib": 67.142578125,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-05,
+            "head": 0.0001
+          }
+        },
+        {
+          "arm": "new",
+          "step": 4,
+          "rf_loss": 4.405956268310547,
+          "x_mse": 1.457411289215088,
+          "grad_norm": 12.97808837890625,
+          "seconds": 17.020981515059248,
+          "peak_allocated_gib": 53.600271701812744,
+          "peak_reserved_gib": 67.142578125,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-05,
+            "head": 0.0001
+          }
+        },
+        {
+          "arm": "new",
+          "step": 5,
+          "rf_loss": 4.3973708152771,
+          "x_mse": 1.4546747207641602,
+          "grad_norm": 12.980215072631836,
+          "seconds": 17.080555942142382,
+          "peak_allocated_gib": 53.600271701812744,
+          "peak_reserved_gib": 67.14453125,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-05,
+            "head": 0.0001
+          }
+        },
+        {
+          "arm": "new",
+          "step": 6,
+          "rf_loss": 4.388805389404297,
+          "x_mse": 1.4519290924072266,
+          "grad_norm": 12.98347282409668,
+          "seconds": 16.88889300613664,
+          "peak_allocated_gib": 53.600271701812744,
+          "peak_reserved_gib": 67.14453125,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-05,
+            "head": 0.0001
+          }
+        },
+        {
+          "arm": "new",
+          "step": 7,
+          "rf_loss": 4.380195140838623,
+          "x_mse": 1.4491543769836426,
+          "grad_norm": 12.981281280517578,
+          "seconds": 16.87033386505209,
+          "peak_allocated_gib": 53.600271701812744,
+          "peak_reserved_gib": 67.14453125,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-05,
+            "head": 0.0001
+          }
+        },
+        {
+          "arm": "new",
+          "step": 8,
+          "rf_loss": 4.371543884277344,
+          "x_mse": 1.4463682174682617,
+          "grad_norm": 12.971636772155762,
+          "seconds": 17.033079959917814,
+          "peak_allocated_gib": 53.600271701812744,
+          "peak_reserved_gib": 67.14453125,
+          "micro_batch": 2,
+          "gradient_accumulation": 8,
+          "global_batch": 64,
+          "learning_rates": {
+            "backbone": 2e-06,
+            "adapter_temporal": 2e-05,
+            "head": 0.0001
+          }
+        }
+      ]
+    }
+  },
+  "scope": "fixed training batch; not generalization",
+  "frozen_encoder_retained": true
+}

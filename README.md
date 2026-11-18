@@ -45,8 +45,7 @@ pid_video/       模型、目标、训练、数据抽取、checkpoint、显存/L
 scripts/         本机/PAI worker 启动脚本
 configs/h3_vae/  H3 组件和架构配置（不含权重）
 tests/           CPU 合约测试和可选四卡 tiny FSDP 恢复测试
-third_party/    固化 PiD、H3 VAE 源码，保留来源及许可证
-vendor_archives/ diffusers 固化源码压缩包与逐文件 SHA；bootstrap 后展开到 third_party
+third_party/    PiD 最小运行源码与 H3 VAE，保留来源及许可证
 docs/           设计、实验快照、数据与运行说明
 examples/       manifest / 固定验证样本格式
 ```
@@ -61,13 +60,11 @@ examples/       manifest / 固定验证样本格式
 python -m venv .venv
 source .venv/bin/activate
 pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
-python scripts/bootstrap_vendor.py
 pip install -r requirements.txt
-pip install --no-deps ./third_party/diffusers-sol
 pip install -e . --no-deps
 ```
 
-需要系统 FFmpeg（含 libx264）。训练和 VAE 诊断入口显式优先加载 `third_party/diffusers-sol/src` 的 **0.40.0.dev0** 固化源码；环境中 pip 显示的 diffusers 版本不是这里实际采用的版本。
+需要系统 FFmpeg（含 libx264）。精简仓库通过 requirements.txt 安装 `diffusers==0.41.0`，不提交完整 Diffusers 源码或归档。原本机完整 GPU 实验使用本地 0.40.0.dev0 固化版本；依赖版本有所不同，精简版须先通过两步 GPU 保存恢复检查再长期训练。
 
 ## 准备权重
 
@@ -133,6 +130,6 @@ torchrun --standalone --nproc-per-node=4 tests/pid_fsdp_worker.py runs/tiny_fsdp
 ## 来源与后续
 
 - [官方 PiD](https://github.com/nv-tlabs/PiD)，固定 commit `2c8814c2b91cc41a2be7809962c891e0d0ccff5f`。
-- H3 VAE、diffusers 的来源与 SHA 清单见各 third_party 子目录。
+- H3 VAE 与 PiD 的来源及源码 SHA 清单见 third_party 子目录。
 - 保留第三方原许可证；模型权重及数据的使用条件独立于代码。此私有项目未额外授予本项目新增代码的开源许可。
 - 后续待验证：高噪声条件学习、采样步数消融、latent 条件依赖、多个固定验证源、视频时序质量，之后再考虑 1-step 蒸馏。当前没有实现蒸馏训练入口。
